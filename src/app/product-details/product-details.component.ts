@@ -18,7 +18,7 @@ export class ProductDetailsComponent {
   ngOnInit(): void {
     this.getProduct();
   }
-
+ 
   getProduct(): void {
     const $id = Number(this.route.snapshot.paramMap.get('$id'));
     this.productsService.getProduct($id)
