@@ -7,6 +7,7 @@ import { Product } from '../product';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent {
-  @Input('product') product?: Product;
+  @Input('product')
+  product!: Product;
 
 }

@@ -1,7 +1,6 @@
-<a routerLink="/product/{{product!.id}}">
+<a routerLink="/details/{{product.id}}">
 <div class="itemCard">
-        <h3>{{product!.id}}</h3>
-        <p>{{product!.name}}</p>
-
+        <img src="{{product.image}}" alt="a picture of {{product.name}}"/>
+        <p>{{product.name}}<p>
     </div>
 </a>

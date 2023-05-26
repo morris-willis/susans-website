@@ -1,0 +1,17 @@
+.product-details{
+    max-width:1440p;
+    padding: 50px;
+}
+
+img{
+    max-height: 80%;
+    max-width: 80%;       
+}
+
+@media only screen and (min-width: 768px){
+    img{
+        max-height: 500px;
+        max-width: 500px;
+        
+    }
+}

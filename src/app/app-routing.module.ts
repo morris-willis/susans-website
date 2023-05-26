@@ -6,11 +6,12 @@ import { WeavingComponent } from './weaving/weaving.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'Pots', component: PotsComponent},
-  {path: 'Weaving', component: WeavingComponent},
-  {path: 'About', component: AboutComponent},
-  {path: 'product/:id', component: ProductDetailsComponent}
+  {path: 'details/:id', component: ProductDetailsComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'pots', component: PotsComponent},
+  {path: 'weaving', component: WeavingComponent},
+  {path: 'about', component: AboutComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
