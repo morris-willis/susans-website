@@ -10,8 +10,8 @@ export class ProductsService {
     const products = of(PRODUCTS)
     return products
   }
-  getProduct(id: number): Observable<Product>{
-    const product = PRODUCTS.find(p => p.id === 1)!;
+  getProduct($id: number): Observable<Product>{
+    const product = PRODUCTS.find(p => p.$id === $id)!;
     return of(product)
   }
   constructor() { }

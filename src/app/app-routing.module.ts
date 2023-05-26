@@ -6,7 +6,7 @@ import { WeavingComponent } from './weaving/weaving.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 const routes: Routes = [
-  {path: 'details/:id', component: ProductDetailsComponent},
+  {path: 'details/:$id', component: ProductDetailsComponent},
   {path: 'home', component: HomeComponent},
   {path: 'pots', component: PotsComponent},
   {path: 'weaving', component: WeavingComponent},
