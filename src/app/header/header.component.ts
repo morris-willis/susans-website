@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { SearchTermService } from '../search-term.service';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  @Input() search!: string
+  setSearchTerm(searchTerm: string): Observable<null> {
+    this.searchTermService.update(searchTerm)
+    return of ()
+  }
+  constructor(private searchTermService: SearchTermService){}
 }
